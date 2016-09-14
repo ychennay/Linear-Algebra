@@ -59,4 +59,8 @@ def dotProduct (vector1, vector2):
     sumOfSquares = dotProduct(vector, vector)
     return sumOfSquares
     
-    
+# FIND THE MAGNITUDE OF A VECTOR
+def magnitude(vector):
+    import math
+    value = sumOfSquares(vector)
+    return math.sqrt(value)    
