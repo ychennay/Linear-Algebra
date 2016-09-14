@@ -64,3 +64,8 @@ def magnitude(vector):
     import math
     value = sumOfSquares(vector)
     return math.sqrt(value)    
+
+# FIND THE DISTANCE BETWEEN TWO VECTORS
+def distanceBetween(vector1, vector2):
+    import math
+    return magnitude(subtractVector(vector1, vector2))
