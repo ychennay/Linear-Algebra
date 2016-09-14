@@ -89,3 +89,15 @@ def identityMatrix(numRows, numCols):
                 matrix[i][j] = 1
     return matrix
 
+# SEARCH A MATRIX FOR A GIVEN VALUE
+
+def searchMatrix(matrix, key):
+    numCols = len(matrix[0])    
+    numRows = len(matrix)
+    count = 0
+    for i in range(numRows):
+        for j in range(numCols):
+            if matrix[i][j] == key:
+                print("Match found at position:[%i,%i]" % (i,j))
+                count = count + 1
+    print("Total matches found: %i" % count)
