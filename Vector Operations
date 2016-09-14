@@ -17,5 +17,40 @@ def subtractVector(vector1, vector2):
         sumOfVectors[index] = vector1_i - vector2_i
         index = index + 1
     return sumOfVectors
+
+# FINDING THE LENGTH OF A VECTOR
+
+def sumVector(vector):
+    cumSum = 0
+    for index in range(len(vector)):
+        cumSum = vector[index] + cumSum
+    return cumSum
+    
+# SCALAR MULTIPLICATION OF A VECTOR
+
+def scalarMultiplication(vector, scalar):
+    index = 0
+    productOfVectors = [0] * len(vector)
+    for index in range(len(vector)):
+        productOfVectors[index] = vector[index] * scalar
+    return productOfVectors
+    
+# FINDING THE MEAN OF A VECTOR
+
+def meanOfVector(vector):
+    numDimensions = len(vector)
+    cumSum = float(sumVector(vector))
+    mean = (cumSum / numDimensions)
+    return mean
+
+# FIND THE DOT PRODUCT OF TWO VECTORS
+
+def dotProduct (vector1, vector2):
+    cumSum = 0    
+    for vector1_i, vector2_i in zip(vector1, vector2):
+        cumSum = cumSum + vector1_i * vector2_i
+    return cumSum
+
+    
     
     
