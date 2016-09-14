@@ -75,5 +75,5 @@ def distanceBetween(vector1, vector2):
 
 def zeroesMatrix(numRows, numCols):
     row = [0] * numRows
-    matrix = [row] * numCols
+    matrix = np.array([row] * numCols)
     return matrix
