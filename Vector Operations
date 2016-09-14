@@ -77,3 +77,15 @@ def zeroesMatrix(numRows, numCols):
     row = [0] * numRows
     matrix = np.array([row] * numCols)
     return matrix
+    
+#CREATE AN INDENTIY MATRIX OF N X Y dimensions
+
+def identityMatrix(numRows, numCols):
+    matrix = np.array(zeroesMatrix(numRows, numCols))
+    
+    for i in range(numRows):
+        for j in range(numCols):
+            if i == j:
+                matrix[i][j] = 1
+    return matrix
+
