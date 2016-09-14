@@ -69,3 +69,11 @@ def magnitude(vector):
 def distanceBetween(vector1, vector2):
     import math
     return magnitude(subtractVector(vector1, vector2))
+
+
+# CREATE A MATRIX OF N X Y dimensions with 0s
+
+def zeroesMatrix(numRows, numCols):
+    row = [0] * numRows
+    matrix = [row] * numCols
+    return matrix
