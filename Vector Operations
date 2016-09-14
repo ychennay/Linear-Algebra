@@ -1,0 +1,21 @@
+# ADDING TWO VECTORS
+
+def addVector(vector1, vector2):
+    index = 0
+    sumOfVectors = [0] * len(vector1)
+    for vector1_i, vector2_i in zip(vector1, vector2):
+        sumOfVectors[index] = vector1_i + vector2_i
+        index = index + 1
+    return sumOfVectors
+
+# SUBTRACTING TWO VECTORS
+
+def subtractVector(vector1, vector2):
+    index = 0
+    sumOfVectors = [0] * len(vector1)
+    for vector1_i, vector2_i in zip(vector1, vector2):
+        sumOfVectors[index] = vector1_i - vector2_i
+        index = index + 1
+    return sumOfVectors
+    
+    
