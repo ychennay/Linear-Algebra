@@ -1,3 +1,5 @@
+From Joel Grus' book Data Science From Scratch: First Principles With Python
+
 # ADDING TWO VECTORS
 
 def addVector(vector1, vector2):
@@ -51,6 +53,10 @@ def dotProduct (vector1, vector2):
         cumSum = cumSum + vector1_i * vector2_i
     return cumSum
 
-    
+# FIND THE SUM OF SQUARES OF A VECTOR
+
+    def sumOfSquares (vector):
+    sumOfSquares = dotProduct(vector, vector)
+    return sumOfSquares
     
     
